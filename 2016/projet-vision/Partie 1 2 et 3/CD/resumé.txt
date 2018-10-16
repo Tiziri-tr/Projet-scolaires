@@ -1,0 +1,15 @@
+GUELLAL Tiziri M2SII
+
+
+M2SII: VISION ARTIFICIELLE
+
+
+
+choses faites : 
+- Filtre moyen (personnalisé et prédéfinie)
+- Filtre median (personnalisé et prédéfinie)
+- Filtre morphologique
+- Filtre personnalisé (supplémentaire)
+- Transformée de Hough pour la détection de droites et de cercles (personnalisé et prédéfinie)
+
+bonus application explication espace de hough

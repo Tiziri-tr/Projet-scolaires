@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1448698026 source:d:\9raya\m2 sii\vision\tp\hough_cercles\main.cpp
+	<iostream>
+	<cv.h>
+	<highgui.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<vector>
+

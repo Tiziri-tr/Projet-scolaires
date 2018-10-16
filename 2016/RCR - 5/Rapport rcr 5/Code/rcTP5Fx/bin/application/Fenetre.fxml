@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorePaneFenetre" minHeight="200.0" minWidth="200.0" prefHeight="309.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <children>
+      <Button layoutX="304.0" layoutY="40.0" mnemonicParsing="false" onAction="#openFile" text="Select File" />
+      <TextField fx:id="champsFichier" editable="false" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="283.0" />
+      <Hyperlink layoutX="343.0" layoutY="284.0" onAction="#openLog" text="Open Log" />
+      <Pane fx:id="paneLog" layoutY="309.0" prefHeight="279.0" prefWidth="398.0" visible="false">
+         <children>
+            <Label layoutX="14.0" text="Log :" />
+            <TextArea fx:id="Log" editable="false" layoutX="14.0" layoutY="23.0" prefHeight="218.0" prefWidth="381.0" />
+            <ProgressBar fx:id="progresseBar" layoutX="14.0" layoutY="247.0" prefHeight="18.0" prefWidth="381.0" progress="0.0" />
+         </children>
+      </Pane>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#sousMenu_cygwin" text="Open cygwin" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sousMenu_delete" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sousMenu_about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane fx:id="panNoeudsParents" layoutX="268.0" layoutY="78.0" prefHeight="200.0" prefWidth="135.0" visible="false">
+         <children>
+            <Button layoutX="9.0" layoutY="168.0" mnemonicParsing="false" onAction="#btn_valider" prefHeight="25.0" prefWidth="61.0" text="Changer" />
+            <Button layoutX="74.0" layoutY="168.0" mnemonicParsing="false" onAction="#btn_annuler" prefHeight="25.0" prefWidth="61.0" text="Annuler" />
+            <Label layoutX="16.0" layoutY="22.0" text="Nombre de noeuds :" />
+            <Label layoutX="15.0" layoutY="83.0" text="Nombre de parents :" />
+            <TextField fx:id="nb_noeuds" layoutX="16.0" layoutY="47.0" prefHeight="25.0" prefWidth="109.0" />
+            <TextField fx:id="nb_parents" layoutX="16.0" layoutY="106.0" prefHeight="25.0" prefWidth="109.0" />
+         </children>
+      </Pane>
+      <TabPane fx:id="tabPane" layoutY="78.0" prefHeight="232.0" prefWidth="262.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="graphe.m">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="textAreaGraphe" layoutY="2.0" prefHeight="200.0" prefWidth="262.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="ki.m">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="textAreaKi" layoutY="2.0" prefHeight="200.0" prefWidth="262.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="nombreki.m">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="textAreaNombreki" layoutY="2.0" prefHeight="200.0" prefWidth="262.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorePaneFenetre" minHeight="200.0" minWidth="200.0" prefHeight="489.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <children>
+      <Pane fx:id="paneLog" layoutY="481.0" prefHeight="69.0" prefWidth="676.0" visible="false">
+         <children>
+            <Label layoutX="13.0" layoutY="-6.0" text="Log :" />
+            <TextArea fx:id="Log" layoutX="13.0" layoutY="23.0" prefHeight="38.0" prefWidth="656.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="35.0" prefHeight="446.0" prefWidth="676.0">
+         <children>
+            <Button layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#openFile" prefHeight="25.0" prefWidth="82.0" text="Select File" />
+            <TextField fx:id="champsFichier" editable="false" layoutX="17.0" layoutY="14.0" prefHeight="25.0" prefWidth="550.0" />
+            <Button layoutX="587.0" layoutY="380.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Annuler" />
+            <Button layoutX="17.0" layoutY="380.0" mnemonicParsing="false" onAction="#decider" prefHeight="25.0" prefWidth="113.0" text="Décider !" />
+            <Hyperlink layoutX="614.0" layoutY="421.0" onAction="#openLog" text="Open Log" />
+            <ImageView fx:id="imgView" fitHeight="256.0" fitWidth="316.0" layoutX="340.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" />
+            <TextArea fx:id="resultat" layoutX="17.0" layoutY="90.0" prefHeight="264.0" prefWidth="296.0" />
+            <Label fx:id="resLabel" layoutX="17.0" layoutY="58.0" text="Resultat :" />
+         </children>
+      </Pane>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sousMenu_delete" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sousMenu_about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

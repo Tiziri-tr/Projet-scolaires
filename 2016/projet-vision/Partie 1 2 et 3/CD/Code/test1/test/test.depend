@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1448699142 source:d:\9raya\m2 sii\vision\tp\test\main.cpp
+	<cv.h>
+	<highgui.h>
+	<math.h>
+

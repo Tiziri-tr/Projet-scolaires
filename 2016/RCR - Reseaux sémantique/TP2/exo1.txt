@@ -1,0 +1,15 @@
+arche
+	<- is_a - timgad
+	<- is_a - arche bab el gherb
+		- composé -> A 
+			<- horizontal - A
+			- is_a -> BLOC
+		- composé -> B
+			- position -> vertical
+			- EG -> A
+			- is_a -> BLOC
+		- composé -> C
+			- position -> vertical
+			- ED -> A
+			- is_a -> BLOC
+		

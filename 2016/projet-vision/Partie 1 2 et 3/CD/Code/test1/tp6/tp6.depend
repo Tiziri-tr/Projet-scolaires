@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1447077718 source:d:\9raya\m2 sii\vision\tp\tp6\main.cpp
+	<iostream>
+	<cv.h>
+	<highgui.h>
+
